@@ -9,18 +9,18 @@ import RevisionPlanner from './components/RevisionPlanner';
 
 function App() {
   const [activeTab, setActiveTab] = useState(0);
-  const [pageTitle, setPageTitle] = useState('Next Exam');
+  const [pageTitle, setPageTitle] = useState('Welcome');
 
   useEffect(() => {
     switch (activeTab) {
       case 0:
-        setPageTitle('Next Exam');
+        setPageTitle('Welcome ');
         break;
       case 1:
-        setPageTitle('Exam List');
+        setPageTitle('Exams');
         break;
       case 2:
-        setPageTitle('Revision Planner');
+        setPageTitle('Time to revise?');
         break;
       default:
         setPageTitle('Exam Tracker');
